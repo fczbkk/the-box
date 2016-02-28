@@ -1,3 +1,4 @@
+/*
 import getDistance from './../methods/get-distance';
 import getOverlap from './../methods/get-overlap';
 import detectOverlap from './../methods/detect-overlap';
@@ -9,7 +10,7 @@ import canCoexist from './../methods/can-coexist';
 import canFitAround from './../methods/can-fit-around';
 import findClosest from './../methods/find-closest';
 import fitAround from './../methods/fit-around';
-
+*/
 
 export default class {
 
@@ -116,6 +117,7 @@ export default class {
     return this.get();
   }
 
+  /*
   getDistance (box) {return getDistance(this, box);}
   getOverlap (box) {return getOverlap(this, box);}
   detectOverlap (box) {return detectOverlap(this, box);}
@@ -127,6 +129,7 @@ export default class {
   canFitAround (a, b) {return canFitAround(this, a, b);}
   findClosest (boxes, prop) {return findClosest(this, boxes, prop);}
   fitAround (a, b) {return fitAround(this, a, b);}
+  */
 
   // for better debug
   toString () {
