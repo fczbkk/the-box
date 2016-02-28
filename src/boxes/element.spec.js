@@ -14,7 +14,9 @@ describe('Element box', () => {
 
   function setElementStyle (element, style = {}) {
     for (let key in style) {
-      element.style[key] = style[key];
+      if (style.hasOwnProperty(key)) {
+        element.style[key] = style[key];
+      }
     }
   }
 

@@ -1,14 +1,12 @@
 {
   "name": "the-box",
   "version": "0.0.1",
-  "description": "JS objects for working with DOM boxes.",
-  "main": "lib/node/index.js",
+  "description": "Utilities for working with DOM boxes.",
+  "main": "lib/index.js",
   "scripts": {
     "cleanup": "./node_modules/.bin/rimraf temp lib",
     "prebuild": "npm run cleanup",
-    "build": "npm run build:node & npm run build:browser",
-    "build:node": "./node_modules/.bin/babel src --out-dir lib/node --ignore .spec.js",
-    "build:browser": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build": "./node_modules/.bin/babel src --out-dir lib --ignore .spec.js",
     "test": "./node_modules/.bin/karma start karma.conf.js --single-run",
     "dev": "./node_modules/.bin/karma start karma.conf.js"
   },
