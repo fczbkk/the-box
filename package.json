@@ -1,5 +1,5 @@
 {
-  "name": "the-box",
+  "name": "the-dom-box",
   "version": "1.0.0",
   "description": "Utilities for working with DOM boxes.",
   "main": "lib/index.js",
