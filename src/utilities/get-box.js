@@ -1,4 +1,4 @@
-import isElement from './is-element';
+import isElement from 'iselement';
 
 import BoxGeneric from './../boxes/generic';
 import BoxElement from './../boxes/element';
