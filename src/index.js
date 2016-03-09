@@ -11,6 +11,7 @@ import canFitAround from './methods/can-fit-around';
 import findClosest from './methods/find-closest';
 import fitAround from './methods/fit-around';
 import shrinkToFit from './methods/shrink-to-fit';
+import align from './methods/align';
 
 
 module.exports = {
@@ -26,5 +27,6 @@ module.exports = {
   canFitAround: canFitAround,
   findClosest: findClosest,
   fitAround: fitAround,
-  shrinkToFit: shrinkToFit
+  shrinkToFit: shrinkToFit,
+  align: align
 };
