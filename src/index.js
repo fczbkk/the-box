@@ -10,6 +10,7 @@ import canCoexist from './methods/can-coexist';
 import canFitAround from './methods/can-fit-around';
 import findClosest from './methods/find-closest';
 import fitAround from './methods/fit-around';
+import shrinkToFit from './methods/shrink-to-fit';
 
 
 module.exports = {
@@ -24,5 +25,6 @@ module.exports = {
   canCoexist: canCoexist,
   canFitAround: canFitAround,
   findClosest: findClosest,
-  fitAround: fitAround
+  fitAround: fitAround,
+  shrinkToFit: shrinkToFit
 };
