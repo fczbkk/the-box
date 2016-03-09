@@ -10,7 +10,7 @@
     "test": "karma start karma.conf.js --single-run",
     "dev": "karma start karma.conf.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags && npm puslish",
     "version": "npm run build && npm run changelog && git add -A"
   },
   "repository": {
