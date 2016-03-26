@@ -100,6 +100,15 @@ describe('Generic Box', () => {
         height: 400
       });
     });
+    
+    it('movePivotTo', function () {
+      test_box.movePivotTo(0, 0);
+
+      const result = test_box.get();
+
+      expect(result.left).toEqual(-150);
+      expect(result.top).toEqual(-200);
+    });
 
     it('moveBy', () => {
       test_box.moveBy(50, 50);

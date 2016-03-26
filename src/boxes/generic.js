@@ -1,17 +1,3 @@
-/*
-import getDistance from './../methods/get-distance';
-import getOverlap from './../methods/get-overlap';
-import detectOverlap from './../methods/detect-overlap';
-import getPivotAngle from './../methods/get-pivot-angle';
-import moveInside from './../methods/move-inside';
-import contains from './../methods/contains';
-import canContain from './../methods/can-contain';
-import canCoexist from './../methods/can-coexist';
-import canFitAround from './../methods/can-fit-around';
-import findClosest from './../methods/find-closest';
-import fitAround from './../methods/fit-around';
-*/
-
 export default class {
 
   constructor (input = {}) {
@@ -85,6 +71,23 @@ export default class {
   }
 
 
+  movePivotTo (left, top) {
+    if (typeof left !== 'number') {
+      left = this.pivot.left;
+    }
+    if (typeof top !== 'number') {
+      top = this.pivot.top;
+    }
+
+    this.moveTo(
+      left - (this.width / 2),
+      top - (this.height / 2)
+    );
+
+    return this.get();
+  };
+
+
   moveBy (horizontal, vertical) {
     if (typeof horizontal === 'number') {
       this.left = this.left + horizontal;
@@ -116,20 +119,6 @@ export default class {
     }
     return this.get();
   }
-
-  /*
-  getDistance (box) {return getDistance(this, box);}
-  getOverlap (box) {return getOverlap(this, box);}
-  detectOverlap (box) {return detectOverlap(this, box);}
-  getPivotAngle (box) {return getPivotAngle(this, box);}
-  moveInside (box) {return moveInside(this, box);}
-  contains (box) {return contains(this, box);}
-  canContain (box) {return canContain(this, box);}
-  canCoexist (a, b) {return canCoexist(this, a, b);}
-  canFitAround (a, b) {return canFitAround(this, a, b);}
-  findClosest (boxes, prop) {return findClosest(this, boxes, prop);}
-  fitAround (a, b) {return fitAround(this, a, b);}
-  */
 
   // for better debug
   toString () {
