@@ -1,3 +1,13 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/fczbkk/the-box/compare/v1.2.0...v1.2.1) (2016-06-16)
+
+
+### Bug Fixes
+
+* correct result of `canFitAround()` for too wide or high boxes ([5825d63](https://github.com/fczbkk/the-box/commit/5825d63))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/fczbkk/the-box/compare/v1.1.0...v1.2.0) (2016-03-26)
 
