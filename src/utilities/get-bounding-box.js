@@ -5,9 +5,14 @@ import BoxGeneric from './../boxes/generic';
  * Returns Box object encompassing all provided boxes. If no boxes are
  * provided, returns zero box.
  * @param {*[]} boxes
- * @returns {Box}
+ * @returns {Object} generic box
  */
-export default function (boxes = [{left: 0, top: 0, right: 0, bottom: 0}]) {
+export default function (boxes = []) {
+  // if collection did not match any elements, return a zero box
+  if (boxes.length === 0) {
+    boxes = [{left: 0, top: 0, right: 0, bottom: 0}];
+  }
+
   // object for remembering extreme values, starting with values of first box
   var extremes = {
     left: boxes[0].left,

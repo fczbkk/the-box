@@ -5,7 +5,6 @@ import getBoxesAround from './get-boxes-around';
 // helper function that compares length and values of expectations
 function isMatching(result, expectation) {
   if (result.length !== expectation.length) {
-    console.log('length mismatch', result.length, expectation.length);
     return false;
   }
 

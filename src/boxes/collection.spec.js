@@ -58,4 +58,13 @@ describe('Collection box', () => {
     expect(box.height).toEqual(200);
   });
 
+  it('should return zero box when not matching any elements', function () {
+    const boxes = document.getElementsByTagName('xxx');
+    const box = getBox(boxes);
+    expect(box.left).toEqual(0);
+    expect(box.top).toEqual(0);
+    expect(box.width).toEqual(0);
+    expect(box.height).toEqual(0);
+  });
+
 });

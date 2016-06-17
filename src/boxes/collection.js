@@ -8,10 +8,11 @@ import getBoundingBox from './../utilities/get-bounding-box';
 export default class extends Box {
 
   update () {
-    let boxes = [];
-    for (let i = 0, j = this.input.length; i < j; i++) {
-      boxes.push(getBox(this.input[i]));
-    }
+    // convert collection to array
+    const elements_array = Array.prototype.slice.call(this.input);
+    // convert all elements to box representations
+    const boxes = elements_array.map(item => getBox(item));
+    // find box encompassing all the elements
     const bounding_box = getBoundingBox(boxes);
     return this.set(bounding_box);
   }
