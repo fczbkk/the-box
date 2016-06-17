@@ -2,6 +2,7 @@ import isElement from 'iselement';
 
 import BoxGeneric from './../boxes/generic';
 import BoxElement from './../boxes/element';
+import BoxCollection from './../boxes/collection';
 import BoxDocument from './../boxes/document';
 import BoxViewport from './../boxes/viewport';
 

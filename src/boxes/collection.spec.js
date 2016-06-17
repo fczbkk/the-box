@@ -1,3 +1,6 @@
+import {getBox} from './../';
+
+
 describe('Collection box', () => {
 
   let elm1 = null;
@@ -48,7 +51,7 @@ describe('Collection box', () => {
 
   it('should get properties of collection', () => {
     const boxes = document.getElementsByTagName('div');
-    const box = DomBox.getBox(boxes);
+    const box = getBox(boxes);
     expect(box.left).toEqual(0);
     expect(box.top).toEqual(0);
     expect(box.width).toEqual(300);
