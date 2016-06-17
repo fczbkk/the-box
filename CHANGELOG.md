@@ -1,3 +1,13 @@
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/fczbkk/the-box/compare/v1.2.3...v1.2.4) (2016-06-17)
+
+
+### Bug Fixes
+
+* do not throw when collection is empty ([296813a](https://github.com/fczbkk/the-box/commit/296813a))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/fczbkk/the-box/compare/v1.2.2...v1.2.3) (2016-06-17)
 
