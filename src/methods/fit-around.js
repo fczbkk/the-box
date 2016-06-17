@@ -1,9 +1,9 @@
-import getBox from './../utilities/get-box';
-import getGaps from './../utilities/get-gaps';
+import getBoxesAround from './../utilities/get-boxes-around';
 import canContain from './can-contain';
 import canFitAround from './can-fit-around';
 import findClosest from './find-closest';
 import moveInside from './move-inside';
+
 
 // Change position of `c` so that it is positioned inside `a` without
 // colliding with `b`. If it is not possible, position of `c` does not change.
@@ -11,35 +11,7 @@ import moveInside from './move-inside';
 export default function (a, b, c) {
   if (canFitAround(a, b, c)) {
     // find available targets
-    const gaps = getGaps(a, b);
-
-    const targets = [
-      getBox({
-        left: a.left,
-        top: a.top,
-        width: gaps.horizontal.before,
-        height: a.height
-      }),
-      getBox({
-        left: a.right - gaps.horizontal.after,
-        top: a.top,
-        width: gaps.horizontal.after,
-        height: a.height
-      }),
-      getBox({
-        left: a.left,
-        top: a.top,
-        width: a.width,
-        height: gaps.vertical.before
-      }),
-      getBox({
-        left: a.left,
-        top: a.bottom - gaps.horizontal.after,
-        width: a.width,
-        height: gaps.vertical.after
-      })
-    ];
-
+    const targets = getBoxesAround(a, b);
     const valid_targets = targets.filter(function (target) {
       return canContain(target, c);
     });
