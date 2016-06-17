@@ -1,3 +1,13 @@
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/fczbkk/the-box/compare/v1.2.1...v1.2.2) (2016-06-17)
+
+
+### Bug Fixes
+
+* fix CollectionBox problems ([3727882](https://github.com/fczbkk/the-box/commit/3727882))
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/fczbkk/the-box/compare/v1.2.0...v1.2.1) (2016-06-16)
 
