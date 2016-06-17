@@ -1,3 +1,13 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/fczbkk/the-box/compare/v1.2.2...v1.2.3) (2016-06-17)
+
+
+### Bug Fixes
+
+* find closer targets for `fitAround()` ([0c28269](https://github.com/fczbkk/the-box/commit/0c28269))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/fczbkk/the-box/compare/v1.2.1...v1.2.2) (2016-06-17)
 
