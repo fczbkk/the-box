@@ -1,3 +1,13 @@
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/fczbkk/the-box/compare/v1.2.4...v1.2.5) (2016-06-20)
+
+
+### Bug Fixes
+
+* treat Array as HTMLCollection ([6197d39](https://github.com/fczbkk/the-box/commit/6197d39))
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/fczbkk/the-box/compare/v1.2.3...v1.2.4) (2016-06-17)
 
