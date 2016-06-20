@@ -16,8 +16,11 @@ function isDocument (input) {
 
 function isCollection (input) {
   const string_representation = Object.prototype.toString.call(input);
-  return (string_representation === '[object NodeList]') ||
-    (string_representation === '[object HTMLCollection]');
+  return (
+    (string_representation === '[object NodeList]') ||
+    (string_representation === '[object HTMLCollection]') ||
+    (string_representation === '[object Array]')
+  );
 }
 
 

@@ -49,8 +49,26 @@ describe('Collection box', () => {
     }
   });
 
-  it('should get properties of collection', () => {
+  it('should get properties of HTMLCollection', () => {
     const boxes = document.getElementsByTagName('div');
+    const box = getBox(boxes);
+    expect(box.left).toEqual(0);
+    expect(box.top).toEqual(0);
+    expect(box.width).toEqual(300);
+    expect(box.height).toEqual(200);
+  });
+
+  it('should get properties of NodeList', () => {
+    const boxes = document.querySelectorAll('div');
+    const box = getBox(boxes);
+    expect(box.left).toEqual(0);
+    expect(box.top).toEqual(0);
+    expect(box.width).toEqual(300);
+    expect(box.height).toEqual(200);
+  });
+
+  it('should treat array as collection', function () {
+    const boxes = [elm1, elm2];
     const box = getBox(boxes);
     expect(box.left).toEqual(0);
     expect(box.top).toEqual(0);
