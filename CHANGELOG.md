@@ -1,3 +1,13 @@
+<a name="1.2.6"></a>
+## [1.2.6](https://github.com/fczbkk/the-box/compare/v1.2.5...v1.2.6) (2016-06-21)
+
+
+### Bug Fixes
+
+* IE10- has problem with `super()` in ES6 classes ([a6517e9](https://github.com/fczbkk/the-box/commit/a6517e9))
+
+
+
 <a name="1.2.5"></a>
 ## [1.2.5](https://github.com/fczbkk/the-box/compare/v1.2.4...v1.2.5) (2016-06-20)
 
