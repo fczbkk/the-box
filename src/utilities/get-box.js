@@ -30,10 +30,6 @@ function isCollection (input) {
  * @returns {Object} instance of Box object
  */
 export default function getBox (input) {
-  if (isElement(input)) {
-    return new BoxElement(input);
-  }
-
   if (input === 'viewport') {
     return new BoxViewport();
   }
@@ -44,6 +40,10 @@ export default function getBox (input) {
 
   if (isCollection(input)) {
     return new BoxCollection(input);
+  }
+
+  if (isElement(input)) {
+    return new BoxElement(input);
   }
 
   return new BoxGeneric(input);

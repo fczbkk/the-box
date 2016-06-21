@@ -11,6 +11,9 @@ module.exports = function (config) {
       'coverage',
       'mocha'
     ],
+    mochaReporter: {
+      output: 'minimal'
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
