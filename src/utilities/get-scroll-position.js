@@ -15,7 +15,10 @@ export const document_root = (
  */
 export default function () {
   // modern browsers
-  if (typeof window.pageXOffset !== 'undefined') {
+  if (
+    typeof window.pageXOffset !== 'undefined' &&
+    typeof window.pageYOffset !== 'undefined'
+  ) {
     return {
       left: window.pageXOffset,
       top: window.pageYOffset
@@ -23,8 +26,15 @@ export default function () {
   }
 
   // obsolete browsers
-  return {
-    left: document_root.scrollLeft,
-    top: document_root.scrollTop
+  if (
+    typeof document_root.scrollLeft !== 'undefined' &&
+    typeof document_root.scrollTop !== 'undefined'
+  ) {
+    return {
+      left: document_root.scrollLeft,
+      top: document_root.scrollTop
+    }
   }
+
+  return {left: 0, top: 0}
 }
