@@ -1,3 +1,13 @@
+<a name="1.2.7"></a>
+## [1.2.7](https://github.com/fczbkk/the-box/compare/v1.2.6...v1.2.7) (2016-06-22)
+
+
+### Bug Fixes
+
+* prevent invalid results when `window.pageYOffset` is set to invalid value ([1122b09](https://github.com/fczbkk/the-box/commit/1122b09))
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/fczbkk/the-box/compare/v1.2.5...v1.2.6) (2016-06-21)
 
