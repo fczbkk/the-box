@@ -91,4 +91,11 @@ describe('Element box', () => {
     expect(box.height).toEqual(4000);
   });
 
+  it('should not throw if element is removed', function () {
+    var box = new Box(elm);
+    var fn = function () {box.update();};
+    elm.parentNode.removeChild(elm);
+    expect(fn).not.toThrow();
+  });
+
 });

@@ -55,6 +55,11 @@ describe('Generic Box', () => {
       expect(empty_box.width).toEqual(200);
     });
 
+    it('should not throw if setting invalid properties', function () {
+      var fn = function () {empty_box.set(null);};
+      expect(fn).not.toThrow();
+    });
+
     it('should get properties', () => {
       expect(empty_box.get()).toEqual({
         left: 0,

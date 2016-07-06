@@ -24,9 +24,11 @@ export default class {
 
   // updates values of properties
   set (properties = {}) {
-    for (let property of ['left', 'top', 'width', 'height']) {
-      if (typeof properties[property] !== 'undefined') {
-        this[property] = properties[property];
+    if (typeof properties === 'object' && properties !== null) {
+      for (let property of ['left', 'top', 'width', 'height']) {
+        if (typeof properties[property] !== 'undefined') {
+          this[property] = properties[property];
+        }
       }
     }
     return this.get();
