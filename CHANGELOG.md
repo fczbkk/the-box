@@ -1,3 +1,13 @@
+<a name="1.2.8"></a>
+## [1.2.8](https://github.com/fczbkk/the-box/compare/v1.2.7...v1.2.8) (2016-07-06)
+
+
+### Bug Fixes
+
+* prevent errors when using invalid data ([ac3770c](https://github.com/fczbkk/the-box/commit/ac3770c))
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/fczbkk/the-box/compare/v1.2.6...v1.2.7) (2016-06-22)
 
