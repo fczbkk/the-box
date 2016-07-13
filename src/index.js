@@ -12,6 +12,7 @@ import findClosest from './methods/find-closest';
 import fitAround from './methods/fit-around';
 import shrinkToFit from './methods/shrink-to-fit';
 import align from './methods/align';
+import touch from './methods/touch';
 
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   findClosest: findClosest,
   fitAround: fitAround,
   shrinkToFit: shrinkToFit,
-  align: align
+  align: align,
+  touch: touch
 };
