@@ -53,11 +53,32 @@ export default class {
   }
 
 
-  // adds padding around the whole box
+  /**
+   * Adds padding to the whole box.
+   * @param {number} padding
+   */
   pad (padding = 0) {
+    this.padHorizontal(padding);
+    this.padVertical(padding);
+  }
+
+
+  /**
+   * Adds padding to the left and right side of box.
+   * @param {number} padding
+   */
+  padHorizontal (padding = 0) {
     this.left -= padding;
-    this.top -= padding;
     this.width += padding * 2;
+  }
+
+
+  /**
+   * Adds padding to the top and bottom side of box.
+   * @param {number} padding
+   */
+  padVertical (padding = 0) {
+    this.top -= padding;
     this.height += padding * 2;
   }
 

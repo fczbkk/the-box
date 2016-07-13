@@ -94,6 +94,30 @@ describe('Generic Box', () => {
       });
     });
 
+    it('padHorizontal', () => {
+      test_box.padHorizontal(50);
+      expect(test_box.get()).toEqual({
+        left: 50,
+        top: 200,
+        right: 450,
+        bottom: 600,
+        width: 400,
+        height: 400
+      });
+    });
+
+    it('padVertical', () => {
+      test_box.padVertical(50);
+      expect(test_box.get()).toEqual({
+        left: 100,
+        top: 150,
+        right: 400,
+        bottom: 650,
+        width: 300,
+        height: 500
+      });
+    });
+
     it('moveTo', () => {
       test_box.moveTo(50, 150);
       expect(test_box.get()).toEqual({
