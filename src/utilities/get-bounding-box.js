@@ -2,10 +2,10 @@ import BoxGeneric from './../boxes/generic';
 
 
 /**
- * Returns Box object encompassing all provided boxes. If no boxes are
- * provided, returns zero box.
- * @param {*[]} boxes
- * @returns {Object} generic box
+ * Returns Box object encompassing all provided boxes. If no boxes are provided, returns zero box.
+ * @param {Array.<Box>} [boxes=[]]
+ * @returns {Box} generic box
+ * @ignore
  */
 export default function (boxes = []) {
   // if collection did not match any elements, return a zero box

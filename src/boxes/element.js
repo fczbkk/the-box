@@ -2,6 +2,11 @@ import Box from './generic';
 import getScrollPosition from './../utilities/get-scroll-position';
 
 
+/**
+ * Class representing Box of an Element.
+ * @name ElementBox
+ * @extends Box
+ */
 export default class extends Box {
 
   update () {

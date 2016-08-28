@@ -1,10 +1,10 @@
 /**
  * Returns `true` if box `b` is completely inside box `a`.
- * @param {object} a
- * @param {object} b
+ * @param {Box} a
+ * @param {Box} b
  * @returns {boolean}
  */
-export default function (a, b) {
+export default function contains (a, b) {
   return (
     (a.left <= b.left) &&
     (a.top <= b.top) &&

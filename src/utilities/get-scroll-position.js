@@ -1,6 +1,7 @@
 /**
  * Cross-browser reference to the root document node.
  * @type {Element|Node|HTMLElement}
+ * @ignore
  */
 export const document_root = (
   document.documentElement ||
@@ -11,7 +12,8 @@ export const document_root = (
 /**
  * Cross-browser function to get left and top position of viewport relative to
  * the document.
- * @returns {*}
+ * @returns {{left: {number}, top: {number}}}
+ * @ignore
  */
 export default function () {
   // modern browsers

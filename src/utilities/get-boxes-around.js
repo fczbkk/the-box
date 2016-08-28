@@ -2,14 +2,15 @@ import getGaps from './get-gaps';
 import getBox from './get-box';
 
 
-// Returns list of boxes that can be placed around `b` to fill entire `a`.
-// Note: Returned boxes can be overlapping. This is intended to be used to find
-// places to position another box, so that it fits inside `a` around `b`.
-// If you are looking for boxes that seamlessly fill the space around `b`
-// inside `a`, try this module:
-// https://github.com/fczbkk/gap-grid
-
-export default function (a, b) {
+/**
+ * Returns list of boxes that can be placed around `b` to fill entire `a`.
+ * NOTE: Returned boxes can be overlapping. This is intended to be used to find places to position another box, so that it fits inside `a`, without coliding with `b`. If you are looking for boxes that seamlessly fill the space around `b` inside `a`, try this module instead: https://github.com/fczbkk/gap-grid
+ * @param {Box} a
+ * @param {Box} b
+ * @returns {Array.<Box>}
+ * @ignore
+ */
+export default function getBoxesAround (a, b) {
   var result = [];
   var gaps = getGaps(a, b);
 
@@ -59,8 +60,13 @@ export default function (a, b) {
 }
 
 
-// accepts list of Boxes, returns list of unique Boxes
-function makeUnique (boxes) {
+/**
+ * Accepts list of Boxes, returns list of unique Boxes.
+ * @param {Array.<Box>} [boxes=[]]
+ * @returns {Array.<Box>}
+ * @ignore
+ */
+function makeUnique (boxes = []) {
   // boxes converted to string, for easier comparison
   const ref = [];
   const result = [];

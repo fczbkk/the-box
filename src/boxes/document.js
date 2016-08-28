@@ -1,6 +1,11 @@
 import Box from './generic';
 
 
+/**
+ * Class representing Box of whole document.
+ * @name DocumentBox
+ * @extends Box
+ */
 export default class extends Box {
 
   update () {

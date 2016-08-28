@@ -2,9 +2,11 @@ import Box from './generic';
 import getBox from './../utilities/get-box';
 import getBoundingBox from './../utilities/get-bounding-box';
 
-// This handles either HTMLCollection (e.g. `getElementsByTagName()`)
-// or NodeList (e.g. `querySelectorAll()`).
-
+/**
+ * Class representing bounding Box around collection of elements. Accepts either HTMLCollection (e.g. `getElementsByTagName()`) or NodeList (e.g. `querySelectorAll()`).
+ * @name CollectionBox
+ * @extends Box
+ */
 export default class extends Box {
 
   update () {

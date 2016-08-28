@@ -1,5 +1,11 @@
-// adjusts positions of `b` so that it is aligned to `a`
-export default function (a, b, horizontal, vertical) {
+/**
+ * Adjusts position of `b` so that it is aligned to `a`.
+ * @param {Box} a
+ * @param {Box} b
+ * @param {string} [horizontal] - 'left', 'right' or 'center'
+ * @param {string} [vertical] - 'top', 'bottom' or 'center
+ */
+export default function align (a, b, horizontal, vertical) {
 
   switch (horizontal) {
     case 'left':

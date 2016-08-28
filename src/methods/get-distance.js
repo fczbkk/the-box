@@ -2,9 +2,13 @@ import getDifference from './get-difference';
 import getHypotenuse from './../utilities/get-hypotenuse';
 
 
-// Returns horizontal, vertical, direct and pivot distance between two boxes.
-// If boxes overlap, returns zero values.
-export default function (a, b) {
+/**
+ * Returns horizontal, vertical, direct and pivot distance between two boxes.
+ * @param {Box} a
+ * @param {Box} b
+ * @returns {{horizontal: number, vertical: number, pivot: number}}
+ */
+export default function getDistance (a, b) {
   var difference = getDifference(a, b);
 
   var result = {

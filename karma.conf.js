@@ -1,50 +1,29 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: [
-      'jasmine'
-    ],
-    files: [
-      'src/**/*.spec.js'
-    ],
-    reporters: [
-      'coverage',
-      'mocha'
-    ],
-    mochaReporter: {
-      output: 'minimal'
-    },
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: [
-      'PhantomJS'
-    ],
-    singleRun: false,
-    preprocessors: {
-      'src/**/*.js': [
-        'webpack',
-        'coverage'
-      ]
-    },
+    frameworks: ['jasmine'],
+    files: ['src/**/*.spec.js'],
+    preprocessors: {'src/**/*.spec.js': ['webpack']},
+    webpack: webpack_config,
+    webpackMiddleware: {noInfo: true},
+    reporters: ['coverage', 'mocha'],
+    mochaReporter: {output: 'minimal'},
     coverageReporter: {
       type: 'html',
-      dir: 'temp/coverage/'
+      dir: 'temp/coverage'
     },
-    webpack: {
-      module: {
-        loaders: [
-          {
-            test: /\.js$/,
-            loader: 'babel-loader'
-          }
-        ]
-      },
-      devtool: 'source-map'
-    },
-    webpackMiddleware: {
-      noInfo: true
-    }
+    browsers: ['PhantomJS'],
+    singleRun: true
   });
+};
+
+var webpack_config = {
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ['babel-loader', 'eslint-loader']
+      }
+    ]
+  }
 };

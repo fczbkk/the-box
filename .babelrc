@@ -1,8 +1,13 @@
 {
-  "presets": ["es2015"],
-  "plugins": [
-    ["transform-es2015-classes", {
-      "loose": true
-    }]
-  ]
+  "plugins": ["transform-object-assign"],
+  "env": {
+    "es5": {
+      "presets": ["es2015"]
+    },
+    "es6": {
+      "presets": [
+        ["es2015", {"modules": false}]
+      ]
+    }
+  }
 }

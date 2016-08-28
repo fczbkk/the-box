@@ -2,6 +2,11 @@ import Box from './generic';
 import getScrollPosition from './../utilities/get-scroll-position';
 
 
+/**
+ * Class representing Box of viewport.
+ * @name ViewportBox
+ * @extends Box
+ */
 export default class extends Box {
 
   update () {

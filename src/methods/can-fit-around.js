@@ -1,9 +1,14 @@
 import canContain from './can-contain';
 import getBoxesAround from './../utilities/get-boxes-around';
 
-// Returns `true` if `c` can be positioned inside `a`
-// so that it will not collide with `b`.
-export default function (a, b, c) {
+/**
+ * Returns `true` if `c` can be positioned inside `a` so that it will not collide with `b`.
+ * @param {Box} a
+ * @param {Box} b
+ * @param {Box} c
+ * @returns {boolean}
+ */
+export default function canFitAround (a, b, c) {
   // can `c` itself fit inside `a`?
   if (!canContain(a, c)) {return false;}
 

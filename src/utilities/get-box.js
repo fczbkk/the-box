@@ -26,8 +26,9 @@ function isCollection (input) {
 
 /**
  * Checks for the type of `input` and returns appropriate Box object.
+ * @name getBox
  * @param {*} [input]
- * @returns {Object} instance of Box object
+ * @returns {Box} instance of Box object
  */
 export default function getBox (input) {
   if (input === 'viewport') {

@@ -1,9 +1,9 @@
 /**
- * Move box B so that it touches box A from the outside.
- * @param {Object} a
- * @param {Object} b
- * @param {null|string} horizontal Either `left` or `right`
- * @param {null|string} vertical Either `top` or `bottom`
+ * Move `b` so that it touches `a` from the outside.
+ * @param {Box} a
+ * @param {Box} b
+ * @param {null|string} [horizontal] - Either `left` or `right`.
+ * @param {null|string} [vertical] - Either `top` or `bottom`.
  */
 export default function touch (a, b, horizontal, vertical) {
   let left_position, top_position;

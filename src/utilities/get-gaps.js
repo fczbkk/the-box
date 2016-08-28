@@ -1,6 +1,14 @@
 // Returns sizes of gaps inside `a` around `b`.
 // Used mostly as utility function.
-export default function (a, b) {
+
+/**
+ * Returns sizes of gaps inside `a` around `b`.
+ * @param {Box} a
+ * @param {Box} b
+ * @returns {{horizontal: {before: number, after: number}, vertical: {before: number, after: number}}}
+ * @ignore
+ */
+export default function getGaps (a, b) {
   var result = {
     horizontal: {
       before: Math.max(0, b.left - a.left),

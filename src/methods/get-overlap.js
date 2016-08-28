@@ -3,7 +3,13 @@ import BoxGeneric from './../boxes/generic';
 
 // Returns box for an area where both boxes are overlapping.
 // Returns `null` if boxes do not overlap.
-export default function (a, b) {
+/**
+ * Returns box for an area where both boxes are overlapping. Returns `null` if boxes do not overlap.
+ * @param {Box} a
+ * @param {Box} b
+ * @returns {Box|null}
+ */
+export default function getOverlap (a, b) {
   // if boxes do not overlap, just return `null`...
   if (detectOverlap(a, b)) {
     return new BoxGeneric({
