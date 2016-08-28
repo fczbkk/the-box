@@ -24,7 +24,7 @@
     "doc": "documentation readme ./src/index.js -s 'Documentation'",
     "eslint": "eslint ./{src,test}/**/*.js",
     "eslint:build": "npm run eslint -- --max-warnings 0",
-    "prepublish": "npm run compile"
+    "postinstall": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -74,6 +74,6 @@
     "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
-    "iselement": "^1.0.0"
+    "iselement": "^1.1.2"
   }
 }
