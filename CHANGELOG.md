@@ -1,3 +1,13 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/fczbkk/the-box/compare/v1.4.1...v1.4.2) (2016-08-29)
+
+
+### Bug Fixes
+
+* fix publish workflow ([520e3cd](https://github.com/fczbkk/the-box/commit/520e3cd))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/fczbkk/the-box/compare/v1.4.0...v1.4.1) (2016-08-28)
 
