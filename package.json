@@ -1,6 +1,6 @@
 {
   "name": "the-dom-box",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Utilities for working with DOM boxes.",
   "main": "lib/index.js",
   "module": "module/index.js",

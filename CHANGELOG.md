@@ -1,3 +1,8 @@
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/fczbkk/the-box/compare/v1.4.2...v1.4.3) (2016-08-30)
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/fczbkk/the-box/compare/v1.4.1...v1.4.2) (2016-08-29)
 
