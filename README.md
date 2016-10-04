@@ -22,7 +22,7 @@ import TheBox from 'the-dom-box';
 
 // define some boxes
 var my_element = document.getElementById('my_box');
-var my_element_box = TheBox.getBox();
+var my_element_box = TheBox.getBox(my_element);
 var viewport_box = TheBox.getBox('viewport');
 
 // update box properties to reflext current size and position of input
