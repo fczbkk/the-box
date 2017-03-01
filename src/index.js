@@ -15,7 +15,7 @@ import align         from './methods/align';
 import touch         from './methods/touch';
 
 
-module.exports = {
+export default {
   getBox: getBox,
   getDistance: getDistance,
   getOverlap: getOverlap,
@@ -31,4 +31,22 @@ module.exports = {
   shrinkToFit: shrinkToFit,
   align: align,
   touch: touch
+};
+
+export {
+  getBox as getBox,
+  getDistance as getDistance,
+  getOverlap as getOverlap,
+  detectOverlap as detectOverlap,
+  getPivotAngle as getPivotAngle,
+  moveInside as moveInside,
+  contains as contains,
+  canContain as canContain,
+  canCoexist as canCoexist,
+  canFitAround as canFitAround,
+  findClosest as findClosest,
+  fitAround as fitAround,
+  shrinkToFit as shrinkToFit,
+  align as align,
+  touch as touch
 };
