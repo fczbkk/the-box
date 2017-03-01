@@ -20,7 +20,7 @@ export default class Box {
 
   /**
    * Constructs generic Box object.
-   * @param {BoxProperties} input
+   * @param {BoxProperties|Element|string} input
    */
   constructor (input = {}) {
     // default values
@@ -50,7 +50,7 @@ export default class Box {
 
   /**
    * Updates properties of the box
-   * @param {BoxProperties} properties
+   * @param {BoxProperties|Box} properties
    * @returns {BoxProperties}
    */
   set (properties = {}) {
@@ -128,7 +128,7 @@ export default class Box {
    * Move box to a specific location
    * @param {number} [left]
    * @param {number} [top]
-   * @returns {Box}
+   * @returns {BoxProperties}
    */
   moveTo (left, top) {
     if (typeof left === 'number') {

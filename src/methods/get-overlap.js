@@ -1,8 +1,6 @@
 import detectOverlap from './detect-overlap';
 import BoxGeneric from './../boxes/generic';
 
-// Returns box for an area where both boxes are overlapping.
-// Returns `null` if boxes do not overlap.
 /**
  * Returns box for an area where both boxes are overlapping. Returns `null` if boxes do not overlap.
  * @param {Box} a
