@@ -1,3 +1,5 @@
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -7,11 +9,20 @@ module.exports = {
     libraryTarget: 'umd'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         loaders: ['babel-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new UglifyJsPlugin({
+      compress: {
+        dead_code: true
+      },
+      beautify: true,
+      mangle: false
+    })
+  ]
 };
