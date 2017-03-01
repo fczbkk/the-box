@@ -15,7 +15,7 @@
     "build": "npm run compile",
     "compile": "npm run compile:es5 && npm run compile:es6",
     "compile:es5": "cross-env NODE_ENV=es5 webpack --config ./webpack.config.js",
-    "compile:es6": "cross-env NODE_ENV=es6 babel src -d module",
+    "compile:es6": "cross-env NODE_ENV=es6 babel src --ignore *.spec.js --out-dir module",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "preversion": "npm run cleanup && npm prune && npm install",
     "postversion": "git push && git push --tags && npm publish",
